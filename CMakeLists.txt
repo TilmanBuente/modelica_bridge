@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 2.8.3)
 project(modelica_bridge)
 add_compile_options(-std=c++11)
 
-set(CATKIN_DEPS joy roscpp std_msgs)
+set(CATKIN_DEPS roscpp std_msgs)
 find_package(catkin REQUIRED COMPONENTS message_generation ${CATKIN_DEPS})
 include_directories(${catkin_INCLUDE_DIRS})
 
